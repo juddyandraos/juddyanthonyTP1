@@ -9,7 +9,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class ColorPicker {
   @Output() color = new EventEmitter <string>();
 
-  changeColor(newColor:string){
+  public changeColor(newColor:string){
     this.color.emit(newColor);
   }
 }

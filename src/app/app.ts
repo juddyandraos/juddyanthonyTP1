@@ -12,7 +12,7 @@ import { ColorPicker } from "./color-picker/color-picker";
 export class App {
   public bgColor = "";
 
-  updateColor(newColor:string){
+  public updateColor(newColor:string){
     this.bgColor = newColor;
   }
 }
