@@ -1,7 +1,7 @@
-<div class="app-main" style="">
+<div class="app-main" [class]="bgColor">
     <app-header></app-header>
     <div class="content">
-        <app-color-picker></app-color-picker>
+        <app-color-picker (color)="updateColor($event)"></app-color-picker>
     </div>
     <app-footer></app-footer>
 </div>

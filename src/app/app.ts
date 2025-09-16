@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { Header } from "./header/header";
 import { Footer } from "./footer/footer";
 import { ColorPicker } from "./color-picker/color-picker";
@@ -10,7 +10,7 @@ import { ColorPicker } from "./color-picker/color-picker";
   styleUrl: './app.scss'
 })
 export class App {
-  public bgColor = "white";
+  public bgColor = "";
 
   updateColor(newColor:string){
     this.bgColor = newColor;
